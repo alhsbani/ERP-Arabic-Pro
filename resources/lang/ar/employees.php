@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'employees' => 'الموظفون',
+    'add_employee' => 'إضافة موظف',
+    'edit_employee' => 'تعديل موظف',
+    'employee_code' => 'رقم الموظف',
+    'name' => 'الاسم',
+    'email' => 'البريد الإلكتروني',
+    'phone' => 'رقم الهاتف',
+    'date_of_birth' => 'تاريخ الميلاد',
+    'national_id' => 'الرقم الوطني',
+    'gender' => 'النوع',
+    'address' => 'العنوان',
+    'city' => 'المدينة',
+    'country' => 'الدولة',
+    'department' => 'القسم',
+    'position' => 'الوظيفة',
+    'hire_date' => 'تاريخ التوظيف',
+    'employment_type' => 'نوع التوظيف',
+    'salary' => 'الراتب',
+    'bank_name' => 'اسم البنك',
+    'bank_account' => 'رقم الحساب البنكي',
+    'actions' => 'الإجراءات',
+];

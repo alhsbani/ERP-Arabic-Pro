@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'employees' => 'Employees',
+    'add_employee' => 'Add Employee',
+    'edit_employee' => 'Edit Employee',
+    'employee_code' => 'Employee Code',
+    'name' => 'Name',
+    'email' => 'Email',
+    'phone' => 'Phone',
+    'date_of_birth' => 'Date of Birth',
+    'national_id' => 'National ID',
+    'gender' => 'Gender',
+    'address' => 'Address',
+    'city' => 'City',
+    'country' => 'Country',
+    'department' => 'Department',
+    'position' => 'Position',
+    'hire_date' => 'Hire Date',
+    'employment_type' => 'Employment Type',
+    'salary' => 'Salary',
+    'bank_name' => 'Bank Name',
+    'bank_account' => 'Bank Account',
+    'actions' => 'Actions',
+];
