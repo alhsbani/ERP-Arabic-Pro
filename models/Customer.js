@@ -9,7 +9,7 @@ const customerSchema = new mongoose.Schema({
   email: {
     type: String,
     lowercase: true,
-    match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'البريد الإلكتروني غير صحيح']
+    match: [/^\w+([\.\-]?\w+)*@\w+([\.\-]?\w+)*(\.\w{2,3})+$/, 'البريد الإلكتروني غير صحيح']
   },
   phone: {
     type: String,
