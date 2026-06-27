@@ -18,7 +18,7 @@ class Permission extends Model
         'name',
         'name_ar',
         'description',
-        'category',
+        'module',
     ];
 
     /**

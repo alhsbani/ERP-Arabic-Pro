@@ -19,7 +19,7 @@ class Role extends Model
         'name_ar',
         'description',
         'company_id',
-        'is_active',
+        'is_system',
     ];
 
     /**
@@ -28,15 +28,15 @@ class Role extends Model
      * @var array<string, string>
      */
     protected $casts = [
-        'is_active' => 'boolean',
+        'is_system' => 'boolean',
     ];
 
     /**
-     * Get the company that owns the role.
+     * Get the permissions for the role.
      */
-    public function company()
+    public function permissions()
     {
-        return $this->belongsTo(Company::class);
+        return $this->belongsToMany(Permission::class, 'role_permissions');
     }
 
     /**
@@ -48,15 +48,7 @@ class Role extends Model
     }
 
     /**
-     * Get the permissions that the role has.
-     */
-    public function permissions()
-    {
-        return $this->belongsToMany(Permission::class, 'role_permissions');
-    }
-
-    /**
-     * Check if role has a specific permission.
+     * Check if role has permission.
      */
     public function hasPermission($permission)
     {
